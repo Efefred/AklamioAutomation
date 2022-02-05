@@ -1,6 +1,6 @@
-# Aklamio Automation Test Project
+# Aklamio Test Automation Project
 
-This project describes the process to develop the test automation solution for the testing   of the Conduit web application, https://react-redux.realworld.io/
+The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application, https://react-redux.realworld.io/
 
 ## Prerequisites 
 
@@ -38,7 +38,7 @@ until finished
 
 ## **Test Automation Framework** 
 
-*Cypress* test automation solution used for web automationis used for the test automation framework while *Visual Studio Code (VS Code)* as the IDE.
+*Cypress* test automation solution used for web automation is used for the test automation framework while *Visual Studio Code (VS Code)* as the IDE.
 Alhough not as popular as Selenium, Cypress is rapidly gaining grounds as a worthy competitor and it's only a matter of time before it 
 becomes the industry standard for web testing automation. Below are some key benefits of using Cypress.
 
