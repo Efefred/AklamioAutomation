@@ -1,0 +1,20 @@
+{
+        "username": "TestMan01",
+        "username_duplicate": "Tester01",
+        "email_duplicate": "twentyfouraces@gmail.com",
+        "email":  "efefred05@gmail.com",
+        "password": "5$EjUt10YD",
+        "error_message_username_empty": "username can't be blank",
+        "error_message_email_empty": "email can't be blank",
+        "error_message_password_empty": "password can't be blank",
+        "error_message_username_duplicate": "username has already been taken",
+        "error_message_email_duplicate": "email has already been taken",
+        "selector": ".error-messages > li",
+        "random_characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+}    
+   
+
+
+
+
+  

@@ -1,0 +1,15 @@
+{
+    "email": "twentyfouraces@gmail.com",
+    "password": "InGodITrust",
+    "article_title": "Amazing Post",
+    "article_title_existing": "Grace",
+    "article_about": "This article is about the automation",
+    "article_main":  "Expect the best from this automation framework",
+    "tags": "Good",
+    "error_field_title_empty": "title can't be blank",
+    "error_field_about_empty": "description can't be blank",
+    "error_field_main_empty": "body can't be blank",
+    "error_field_duplicate": "title must be unique",
+    "selector": ".error-messages > li",
+    "comment": "This is an automated test for Aklamio. Cypress is automation tool and VSCode is the IDE."   
+}    
