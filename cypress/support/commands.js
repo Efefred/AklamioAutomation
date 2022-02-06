@@ -6,6 +6,14 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
 })
 
+//@VISIT CONDUIT WEBSITE
+Cypress.Commands.add('navigateToConduitSite', () => {
+    cy.visit('/')
+    cy.title().should('eq', 'Conduit')
+    cy.url().should('contain', 'realworld.io/#/')
+    
+})
+
 //@SIGN UP
 //USER LEAVES A REQUIRED FIELD (USERNAME) EMPTY
 Cypress.Commands.add('requiredFieldUsernameEmpty', () => {  

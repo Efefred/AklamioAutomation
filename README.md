@@ -73,7 +73,7 @@ The commands to execute the tests on a single browser and on two different brows
 ```
 
 
-### Test Strategy
+### Benefits of Using Cypress for Web Automation Testing
 
 * Ease of installation 
 * Unlike Selenium, test execution happens in browser and drivers are unnecessary
@@ -88,26 +88,43 @@ The commands to execute the tests on a single browser and on two different brows
 
 ## Test Strategy
 
+### Entry Criteria: <br /> 
+* AUT or SUT is available
+* *Features to be Tested* are explicitly stated/defined
+* Test data is available
+* An optimal amount of test cases have been written
+* Test environment is ready and the necessary set-up/configuration done
+
 ### Test Case Design: <br /> 
-The test cases will be prepared based on exploratory testing since there was no test basis i.e. no requirement specification document. Also the the test cases will be defined in specs files contained in the integration folder.<br />
+The test cases are prepared based on exploratory testing since there was no test basis i.e. no requirement specification document. Also the the test cases are defined in specs files contained in the integration folder.<br />
 
 ### Test Data Creation: <br /> 
 The test data is prepared based on the Aklamio test scenarios and the written test cases.<br />
-
-### Test Environment: <br /> 
-.<br /> 
-
+ 
 ### Test Case Execution: <br /> 
-The Requirement specifications for the test project will be sent by client, Aklamio.<br /> 
+A *Test Readiness Checklist* will checked before the execution Test scripts and the following testing types will be executed.
+* Functional testing
+* Sanity testing
+* Smoke testing
+* Regression testing
+ <br /> 
+
+### Exit Criteria: <br /> 
+* All test cases designed for the project have been executed.
+* Sufficient coverage of the features to be tested.
+* Every identified bug has been fixed and closed
+* No high priority or severity bug exists in the SUT/AUT
+* Order from sponsor/executive management to close all pending tasks and end the project 
+* Budget for the project has been depleted
 
 ### Test Reporting: <br /> 
-The Requirement specifications for the test project will be sent by client, Aklamio.<br /> 
+The .<br /> 
 
 ### Source Control: <br /> 
-The Requirement specifications for the test project will be sent by client, Aklamio.<br /> 
+A private repository, *AklamioAutomation* will be created in GitHub. All commits will be pushed to this remote repository .<br /> 
 
 ### Continous Integration/Continuous Delivery: <br /> 
-The Requirement specifications for the test project will be sent by client, Aklamio.<br />
+A CircleCI platform will be used for CI/CD. <br />
 
 ## Observations/Bugs
 ### Sign Up:
@@ -127,3 +144,9 @@ The comment box is empty, the user clicks the *Post Comment* button but no valid
 
 ### Delete Post: <br/>
 The *trash/bin icon* is inactive and no action is performed when it is clicked 
+
+## Glossary
+* *NPM* -> Node Package Manager
+* *AUT* -> Application Under Test
+* *SUT* -> System Under Test
+* *CI/CD* -> Continuous Integration/Continuous Delivery
