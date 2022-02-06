@@ -1,6 +1,7 @@
 # Aklamio Test Automation Project
 
-The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application, <https://react-redux.realworld.io/>
+The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application,<br /> 
+<https://react-redux.realworld.io/>
 
 ## Prerequisites 
 ### 1. System Requirement
@@ -21,7 +22,8 @@ cd C:\Cypress Projects\Cypress\AklamioAutomation
 ``` 
 npm install cypress --save-dev
 ```
-read more about cypress installation and setup via the link; <https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements>
+Read more about cypress installation and setup via the link;<br /> 
+<https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements>
 <br />
 
 
@@ -37,7 +39,6 @@ The integration folder contains the spec files. The five spec files are listed b
 * PostComment
 * SignOut
 * SignUp
-<br />
 
 #### *support* <br /> 
 In order declutter each spec file, several functions are created as custom commands in *support/commands.js* file which are referenced from the individual spec files. <br /> 
@@ -113,7 +114,6 @@ The Requirement specifications for the test project will be sent by client, Akla
 ### Sign Up:
 * Email Address: <br />
 An email address consists of a local part, the @ symbol, and a domain part. However, the Conduit application accepts email address in the format, *abcxyz@gmail*, without a Top-Level Domain (.com, .net etc.) in the domain part. <br />
-<br />
 Since the email field accepted both valid and invalid email address it was considered not stable enough to automate multiple scenarios. The only scenario tested was if the email field was left blank.<br />
 
 * Wrong label: <br /> 
