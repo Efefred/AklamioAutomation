@@ -1,7 +1,6 @@
 # Aklamio Test Automation Project
 
-The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application,<br /> 
-<https://react-redux.realworld.io/>
+The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application, <https://react-redux.realworld.io/>
 
 ## Prerequisites 
 ### 1. System Requirement
@@ -113,8 +112,7 @@ The Requirement specifications for the test project will be sent by client, Akla
 ## Observations/Bugs
 ### Sign Up:
 * Email Address: <br />
-An email address consists of a local part, the @ symbol, and a domain part. However, the Conduit application accepts email address in the format, *abcxyz@gmail*, without a Top-Level Domain (.com, .net etc.) in the domain part. <br />
-Since the email field accepted both valid and invalid email address it was considered not stable enough to automate multiple scenarios. The only scenario tested was if the email field was left blank.<br />
+An email address consists of a local part, the @ symbol, and a domain part. However, the Conduit application accepts email address in the format, *abcxyz@gmail*, without a Top-Level Domain (.com, .net etc.) in the domain part. Since the email field accepted both valid and invalid email address it was considered not stable enough to automate multiple scenarios. The only scenario tested was if the email field was left blank.<br />
 
 * Wrong label: <br /> 
 The button on the Sign Up page is wrongly labelled as *Sign in* instead of Sign up. <br /> 
