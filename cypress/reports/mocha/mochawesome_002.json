@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-07T07:35:20.224Z",
+    "end": "2022-02-07T07:35:32.290Z",
+    "duration": 12066,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0f0d013a-9193-4d0b-a800-e68a1151eb2b",
+      "title": "",
+      "fullFile": "cypress/integration/PostComment.spec.js",
+      "file": "cypress/integration/PostComment.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c7ce1493-8958-4ae4-bea6-4bc0f4b037de",
+          "title": "Enter a Comment and Post it",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Enter a Comment",
+              "fullTitle": "Enter a Comment and Post it Enter a Comment",
+              "timedOut": null,
+              "duration": 10680,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.enterComment();",
+              "err": {},
+              "uuid": "d8ab4ba7-a6cd-4af7-97a6-f101e56ee7db",
+              "parentUUID": "c7ce1493-8958-4ae4-bea6-4bc0f4b037de",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Post Comment",
+              "fullTitle": "Enter a Comment and Post it Post Comment",
+              "timedOut": null,
+              "duration": 1312,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.postComment();",
+              "err": {},
+              "uuid": "5a0378e5-d508-4092-aa30-aafeea9e946c",
+              "parentUUID": "c7ce1493-8958-4ae4-bea6-4bc0f4b037de",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d8ab4ba7-a6cd-4af7-97a6-f101e56ee7db",
+            "5a0378e5-d508-4092-aa30-aafeea9e946c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11992,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

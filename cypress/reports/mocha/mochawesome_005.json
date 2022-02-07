@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-07T07:36:17.600Z",
+    "end": "2022-02-07T07:36:18.585Z",
+    "duration": 985,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "520fb923-b79f-40c9-bad6-7561f8d5d533",
+      "title": "",
+      "fullFile": "cypress/integration/VisitConduit.spec.js",
+      "file": "cypress/integration/VisitConduit.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5423f134-19d0-45a1-af85-74aff1f8d241",
+          "title": "Navigate to Conduit Website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate that a User Can Access the Conduit Website",
+              "fullTitle": "Navigate to Conduit Website Validate that a User Can Access the Conduit Website",
+              "timedOut": null,
+              "duration": 937,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.navigateToConduitSite();",
+              "err": {},
+              "uuid": "b760e006-b517-4f78-be85-73349a5b1249",
+              "parentUUID": "5423f134-19d0-45a1-af85-74aff1f8d241",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b760e006-b517-4f78-be85-73349a5b1249"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 937,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

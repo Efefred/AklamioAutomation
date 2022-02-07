@@ -118,7 +118,7 @@ A *Test Readiness Checklist* will checked before the execution Test scripts and 
 * Budget for the project has been depleted
 
 ### Test Reporting: <br /> 
-The *mochawesome reporter* will be used as the reporting tool for the test results. Follow the links for details on how to install and configure Mocahwesome reporter. <https://www.npmjs.com/package/mochawesome>. <br /> <https://www.linkedin.com/pulse/cypress-test-automation-reporting-mochawesome-amarasiri-/><br />
+The *mochawesome reporter* will be used as the reporting tool for the test results. The test results are stored in this directory, *cypress/reports/mocha*. Follow these links for details on how to install and configure Mocahwesome reporter. <https://www.npmjs.com/package/mochawesome>. <br /> <https://www.linkedin.com/pulse/cypress-test-automation-reporting-mochawesome-amarasiri-/><br />
 
 ### Source Control: <br /> 
 A private repository, *AklamioAutomation*, will be created in GitHub. All commits will be pushed to this remote repository .<br /> 

@@ -1,0 +1,183 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-02-07T07:35:54.859Z",
+    "end": "2022-02-07T07:36:08.974Z",
+    "duration": 14115,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd6238ac-52bd-4def-8e01-23fc9a4f9805",
+      "title": "",
+      "fullFile": "cypress/integration/SignUp.spec.js",
+      "file": "cypress/integration/SignUp.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5c7f836a-0aee-425a-a580-6714dc9bc98b",
+          "title": "Sign Up Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate that Username Field is Required",
+              "fullTitle": "Sign Up Test Validate that Username Field is Required",
+              "timedOut": null,
+              "duration": 3870,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.requiredFieldUsernameEmpty();",
+              "err": {},
+              "uuid": "c1f81fac-6dd5-4f38-83f3-1e44306c046c",
+              "parentUUID": "5c7f836a-0aee-425a-a580-6714dc9bc98b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate that Email Field is Required",
+              "fullTitle": "Sign Up Test Validate that Email Field is Required",
+              "timedOut": null,
+              "duration": 2229,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.requiredFieldEmailEmpty();",
+              "err": {},
+              "uuid": "a218dca8-c36f-4acf-8405-d48c4cc1fc6f",
+              "parentUUID": "5c7f836a-0aee-425a-a580-6714dc9bc98b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate that Password Field is Required",
+              "fullTitle": "Sign Up Test Validate that Password Field is Required",
+              "timedOut": null,
+              "duration": 2233,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.requiredFieldPasswordEmpty();",
+              "err": {},
+              "uuid": "f8951b8f-d32f-4a28-9c5b-7597140530e0",
+              "parentUUID": "5c7f836a-0aee-425a-a580-6714dc9bc98b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate that the User Cannot Make a Duplicate Entry",
+              "fullTitle": "Sign Up Test Validate that the User Cannot Make a Duplicate Entry",
+              "timedOut": null,
+              "duration": 3348,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.duplicateEntry();",
+              "err": {},
+              "uuid": "cbac9d52-f62c-4643-bc18-b487c6845e8e",
+              "parentUUID": "5c7f836a-0aee-425a-a580-6714dc9bc98b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate that Home Page Shows if Sign Up was Successful",
+              "fullTitle": "Sign Up Test Validate that Home Page Shows if Sign Up was Successful",
+              "timedOut": null,
+              "duration": 2332,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.signUpHappyPath();",
+              "err": {},
+              "uuid": "fd185e20-797f-4c40-8a4e-878e37d2c9ff",
+              "parentUUID": "5c7f836a-0aee-425a-a580-6714dc9bc98b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c1f81fac-6dd5-4f38-83f3-1e44306c046c",
+            "a218dca8-c36f-4acf-8405-d48c4cc1fc6f",
+            "f8951b8f-d32f-4a28-9c5b-7597140530e0",
+            "cbac9d52-f62c-4643-bc18-b487c6845e8e",
+            "fd185e20-797f-4c40-8a4e-878e37d2c9ff"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14012,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
