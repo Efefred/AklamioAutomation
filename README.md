@@ -124,7 +124,8 @@ The *mochawesome reporter* will be used as the reporting tool for the test resul
 A private repository, *AklamioAutomation*, will be created in GitHub. All commits will be pushed to this remote repository .<br /> 
 
 ### Continous Integration/Continuous Delivery: <br /> 
-A CircleCI platform will be used for CI/CD. <br />
+A CircleCI platform will be used for CI/CD. <br /> Use this link for details on how to integrate CircleCI with Cypress.
+<https://testdriven.io/blog/running-cypress-tests-in-parallel/#circleci-setup>
 
 ## Observations/Bugs
 ### Sign Up:
