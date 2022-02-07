@@ -1,11 +1,12 @@
-before(' ', () => {
-     cy.visit('/')
-     cy.SignIn()
-})
-
+/// <reference types="Cypress" />
 Cypress.on('uncaught:exception', (err, runnable) => {
     console.log(err);
     return false;
+})
+
+before(' ', () => {
+     cy.visit('/')
+     cy.SignIn()
 })
 
 describe('Create Post Test', () => { 

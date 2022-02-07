@@ -94,6 +94,7 @@ Cypress.Commands.add('postTitleEmpty', () => {
     cy.get(':nth-child(4) > .form-control').type(data.tags)
     cy.get('.btn').contains('Publish Article').click()
     cy.get(data.selector).should('have.text', data.error_field_title_empty)
+    
     //Clear the input fields
     cy.get(':nth-child(2) > .form-control').clear()
     cy.get(':nth-child(3) > .form-control').clear() 

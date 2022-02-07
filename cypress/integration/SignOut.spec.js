@@ -1,7 +1,8 @@
-/**Cypress.on('uncaught:exception', (err, runnable) => {
+/// <reference types="Cypress" />
+Cypress.on('uncaught:exception', (err, runnable) => {
     console.log(err);
     return false;
-})*/
+})
 
 before('Sign in to the application', () => {
     cy.visit('/')

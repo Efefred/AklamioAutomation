@@ -6,8 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
-    "run:allure": "npx cypress run --env allure=true",
-    "run:allure:report": "allure generate allure-results --clean -o allure-report",
     "run:chrome:headed": "cypress run --headed --browser chrome",
     "run:firefox:headed": "cypress run --headed --browser firefox",
     "run:edge:headed": "cypress run --headed --browser edge",
@@ -20,11 +18,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.24.0",
-    "cypress-cucumber-preprocessor": "^4.3.1"
-  },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "cypress-multi-reporters": "^1.5.0",
+    "mocha": "^9.2.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
   },
   "dependencies": {
     "cypress": "^9.4.1"

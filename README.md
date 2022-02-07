@@ -2,6 +2,18 @@
 
 The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application, <https://react-redux.realworld.io/>
 
+## Benefits of Using Cypress for Web Automation Testing
+* Ease of installation 
+* Unlike Selenium, test execution happens in browser and drivers are unnecessary
+* Application JS objects are easily accessible since test code and application run in the same browser*
+* Dashboard support for detailed reporting
+* Support for BDD and TDD testing
+* Auto-wait features make test execution more reliable
+* Superlative documentation with detailed explanation of commands and assertions, and best practices for test automation
+* Makes life easy for front-end developers with respect to writing unit tests
+* Cypress has an excellent documentation. See the link below 
+<https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell>
+
 ## Prerequisites 
 ### 1. System Requirement
 * Windows 7 and above 
@@ -9,15 +21,15 @@ The purpose of this project is to develop a test automation framework to automat
 * Linux Ubuntu 12.04 and above, Fedora 21 and Debian
 
 ### 2. NodeJs and NPM
-### 3. An IDE (I prefer Visual Studio Code) 
+### 3. An IDE (I used Visual Studio Code) 
 <br />
 
 
 ## Installation 
-Cypress was installed locally as a dev dependency for the project using the *npm* command.
-```diff
-cd C:\Cypress Projects\Cypress\AklamioAutomation
-```
+ First, download and install node.js.
+<https://nodejs.org/en/download/>
+
+Then install cypress locally using the *npm* command 
 ``` 
 npm install cypress --save-dev
 ```
@@ -33,11 +45,12 @@ The fixtures folder contains two files, *PostAndComments.json* and *Signup.json*
 ### *integration* <br />
 The integration folder contains the spec files. The five spec files are listed below.<br />
 
-* CreatePost
-* DeletePost
-* PostComment
-* SignOut
+* VisitConduit
 * SignUp
+* CreatePost
+* PostComment
+* Delete Post
+* SignOut
 
 ### *support* <br /> 
 In order declutter each spec file, several functions are created as custom commands in *support/commands.js* file which are referenced from the individual spec files. <br /> 
@@ -73,19 +86,6 @@ The commands to execute the tests on a single browser and on two different brows
 ```
 
 
-### Benefits of Using Cypress for Web Automation Testing
-
-* Ease of installation 
-* Unlike Selenium, test execution happens in browser and drivers are unnecessary
-* Application JS objects are easily accessible since test code and application run in the same browser*
-* Dashboard support for detailed reporting
-* Support for BDD and TDD testing
-* Auto-wait features make test execution more reliable
-* Superlative documentation with detailed explanation of commands and assertions, and best practices for test automation
-* Makes life easy for front-end developers with respect to writing unit tests
-* Cypress has an excellent documentation. See the link below 
-<https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell>
-
 ## Test Strategy
 
 ### Entry Criteria: <br /> 
@@ -118,10 +118,10 @@ A *Test Readiness Checklist* will checked before the execution Test scripts and 
 * Budget for the project has been depleted
 
 ### Test Reporting: <br /> 
-The .<br /> 
+The *mochawesome reporter* will be used as the reporting tool for the test results. Follow the links for details on how to install and configure Mocahwesome reporter. <https://www.npmjs.com/package/mochawesome>. <br /> <https://www.linkedin.com/pulse/cypress-test-automation-reporting-mochawesome-amarasiri-/><br />
 
 ### Source Control: <br /> 
-A private repository, *AklamioAutomation* will be created in GitHub. All commits will be pushed to this remote repository .<br /> 
+A private repository, *AklamioAutomation*, will be created in GitHub. All commits will be pushed to this remote repository .<br /> 
 
 ### Continous Integration/Continuous Delivery: <br /> 
 A CircleCI platform will be used for CI/CD. <br />
@@ -146,7 +146,7 @@ The comment box is empty, the user clicks the *Post Comment* button but no valid
 The *trash/bin icon* is inactive and no action is performed when it is clicked 
 
 ## Glossary
-* *NPM* -> Node Package Manager
-* *AUT* -> Application Under Test
-* *SUT* -> System Under Test
-* *CI/CD* -> Continuous Integration/Continuous Delivery
+* *NPM:* Node Package Manager
+* *AUT:* Application Under Test
+* *SUT:* System Under Test
+* *CI/CD:* Continuous Integration/Continuous Delivery
