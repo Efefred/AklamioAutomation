@@ -21,17 +21,15 @@ Then install cypress locally using the *npm* command
 ``` 
 npm install cypress --save-dev
 ```
-Read more about cypress installation and setup via the link;<br /> 
+Read more about cypress installation and setup via the link;
 <https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements>
-<br />
-
 
 ## Folder Structure
-### *fixtures* <br />
+### *fixtures*
 The fixtures folder contains two files, *PostAndComments.json* and *Signup.json*, created to store all the external static data for the tests.
 
-### *integration* <br />
-The integration folder contains the spec files. The five spec files are listed below.<br />
+### *integration*
+The integration folder contains the spec files. The five spec files are listed below.
 
 * VisitConduit
 * SignUp
@@ -40,7 +38,7 @@ The integration folder contains the spec files. The five spec files are listed b
 * Delete Post
 * SignOut
 
-### *support* <br /> 
+### *support*
 In order declutter each spec file, several functions are created as custom commands in *support/commands.js* file which are referenced from the individual spec files. <br /> 
 <br /> Also, the user-defined json files in the *fixtures* folder are referenced from the commands.js file using the code below.
 
@@ -49,7 +47,7 @@ import user from '../fixtures/Signup.json'
 import data from '../fixtures/PostAndComment.json'
 ```
 
-### *cypress.json* <br /> 
+### *cypress.json* 
 The base Url is defined in the cypress.json file and referenced with the ```cy.visit('/') ``` command in the spec files.
 
 ```yaml
@@ -58,7 +56,7 @@ The base Url is defined in the cypress.json file and referenced with the ```cy.v
 }
 ```
 
-### *package.json* <br /> 
+### *package.json*
 The commands to execute the tests on a single browser and on two different browsers, in headed and headless modes, are defined in scripts section of the package.json file.
 
 ```yaml
@@ -76,28 +74,28 @@ The commands to execute the tests on a single browser and on two different brows
 
 ## Test Strategy
 
-### Entry Criteria: <br /> 
+### Entry Criteria:
 * AUT or SUT is available
 * *Features to be Tested* are explicitly stated/defined
 * Test data is available
 * An optimal amount of test cases have been written
 * Test environment is ready and the necessary set-up/configuration done
 
-### Test Case Design: <br /> 
-The test cases are prepared based on exploratory testing since there was no test basis i.e. no requirement specification document. Also the the test cases are defined in specs files contained in the integration folder.<br />
+### Test Case Design:
+The test cases are prepared based on exploratory testing since there was no test basis i.e. no requirement specification document. Also the the test cases are defined in specs files contained in the integration folder.
 
-### Test Data Creation: <br /> 
-The test data is prepared based on the Aklamio test scenarios and the written test cases.<br />
+### Test Data Creation:
+The test data is prepared based on the Aklamio test scenarios and the written test cases.
  
-### Test Case Execution: <br /> 
+### Test Case Execution:
 A *Test Readiness Checklist* will checked before the execution Test scripts and the following testing types will be executed.
 * Functional testing
 * Sanity testing
 * Smoke testing
 * Regression testing
- <br /> 
 
-### Exit Criteria: <br /> 
+
+### Exit Criteria: 
 * All test cases designed for the project have been executed.
 * Sufficient coverage of the features to be tested.
 * Every identified bug has been fixed and closed
@@ -105,33 +103,33 @@ A *Test Readiness Checklist* will checked before the execution Test scripts and 
 * Order from sponsor/executive management to close all pending tasks and end the project 
 * Budget for the project has been depleted
 
-### Test Reporting: <br /> 
-The *mochawesome reporter* will be used as the reporting tool for the test results. The test results are stored in this directory, *cypress/reports/mocha*. Follow these links for details on how to install and configure Mocahwesome reporter. <https://www.npmjs.com/package/mochawesome>. <br /> <https://www.linkedin.com/pulse/cypress-test-automation-reporting-mochawesome-amarasiri-/><br />
+### Test Reporting: 
+The *mochawesome reporter* will be used as the reporting tool for the test results. The test results are stored in this directory, *cypress/reports/mocha*. Follow these links for details on how to install and configure Mocahwesome reporter. <https://www.npmjs.com/package/mochawesome>. <https://www.linkedin.com/pulse/cypress-test-automation-reporting-mochawesome-amarasiri-/>
 
-### Source Control: <br /> 
-A private repository, *AklamioAutomation*, will be created in GitHub. All commits will be pushed to this remote repository .<br /> 
+### Source Control: 
+A private repository, *AklamioAutomation*, will be created in GitHub. All commits will be pushed to this remote repository .
 
-### Continous Integration/Continuous Delivery: <br /> 
+### Continous Integration/Continuous Delivery:  
 A CircleCI platform will be used for CI/CD. <br /> Use this link for details on how to integrate CircleCI with Cypress.
 <https://testdriven.io/blog/running-cypress-tests-in-parallel/#circleci-setup>
 
 ## Observations/Bugs
 ### Sign Up:
-* Email Address: <br />
+* Email Address: 
 An email address consists of a local part, the @ symbol, and a domain part. However, the Conduit application accepts email address in the format, *abcxyz@gmail*, without a Top-Level Domain (.com, .net etc.) in the domain part. Since the email field accepted both valid and invalid email address it was considered not stable enough to automate multiple scenarios. The only scenario tested was if the email field was left blank.<br />
 
-* Wrong label: <br /> 
+* Wrong label: 
 The button on the Sign Up page is wrongly labelled as *Sign in* instead of Sign up. <br /> 
 
-### Create Post: <br/>
+### Create Post: 
 * Required fields are not explicitly marked/indicated
 * The *tag* field is not a required field
 * The *About* and *Tag* fields are not shown when a user creates a post. They only see the *Title* and *Main*.
 
-### Post Comment: <br /> 
+### Post Comment: 
 The comment box is empty, the user clicks the *Post Comment* button but no validation hint e.g. *This field cannot be empty* or error message is shown. 
 
-### Delete Post: <br/>
+### Delete Post: 
 The *trash/bin icon* is inactive and no action is performed when it is clicked 
 
 ## Glossary
