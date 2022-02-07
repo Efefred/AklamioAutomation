@@ -2,18 +2,6 @@
 
 The purpose of this project is to develop a test automation framework to automate the testing of the Conduit web application, <https://react-redux.realworld.io/>
 
-## Benefits of Using Cypress for Web Automation Testing
-* Ease of installation 
-* Unlike Selenium, test execution happens in browser and drivers are unnecessary
-* Application JS objects are easily accessible since test code and application run in the same browser*
-* Dashboard support for detailed reporting
-* Support for BDD and TDD testing
-* Auto-wait features make test execution more reliable
-* Superlative documentation with detailed explanation of commands and assertions, and best practices for test automation
-* Makes life easy for front-end developers with respect to writing unit tests
-* Cypress has an excellent documentation. See the link below 
-<https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell>
-
 ## Prerequisites 
 ### 1. System Requirement
 * Windows 7 and above 
