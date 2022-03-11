@@ -10,7 +10,7 @@ The purpose of this project is to develop a test automation framework to automat
 
 ### 2. NodeJs and NPM
 ### 3. An IDE (I used Visual Studio Code) 
-<br />
+
 
 
 ## Installation 
@@ -39,8 +39,7 @@ The integration folder contains the spec files. The five spec files are listed b
 * SignOut
 
 ### *support*
-In order declutter each spec file, several functions are created as custom commands in *support/commands.js* file which are referenced from the individual spec files. <br /> 
-<br /> Also, the user-defined json files in the *fixtures* folder are referenced from the commands.js file using the code below.
+In order declutter each spec file, several functions are created as custom commands in *support/commands.js* file which are referenced from the individual spec files. <br /> Also, the user-defined json files in the *fixtures* folder are referenced from the commands.js file using the code below.
 
 ```javascript
 import user from '../fixtures/Signup.json'
